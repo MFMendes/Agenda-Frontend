@@ -9,7 +9,7 @@ export class SessaoService {
     constructor(private readonly cookiesService: CookieService) {}
 
     registrar(sessao: Sessao) {
-        this.cookiesService.set('infoUsuario', JSON.stringify(sessao), 1, '/', '', false, "Lax");
+        this.cookiesService.set('infoUsuario', JSON.stringify(sessao), 1, '/', undefined, false, "Lax");
     }
 
     recuperar(): Sessao {

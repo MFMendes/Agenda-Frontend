@@ -1,6 +1,11 @@
 import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { ToastrModule } from "ngx-toastr";
 import { CoreRoutingModule } from "./core-routing.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { LoginComponent } from "./paginas/login/login.component";
 
 @NgModule({
@@ -9,7 +14,12 @@ import { LoginComponent } from "./paginas/login/login.component";
     ],
     imports: [
         CommonModule,
-        CoreRoutingModule
+        CoreRoutingModule,
+        FormsModule, 
+        ReactiveFormsModule, 
+        HttpClientModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot(),
     ]
 })
 export class CoreModule { }

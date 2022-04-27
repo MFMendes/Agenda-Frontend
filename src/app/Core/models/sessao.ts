@@ -1,19 +1,15 @@
 export class Sessao {
 	public Nome: string;
 	public Token: string;
-	public Jwt: string;
-	public CodigoEmpresa: number;
-	public CodigoUsuario: number;
-	public Empresa: string;
+	public jwt: string;
+	public CodigoUsuario?: number;
 	public Login: string;
 
 	constructor(params?: Partial<Sessao>) {
 		this.Nome = params?.Nome || '';
 		this.Token = params?.Token || '';
-		this.Jwt = params?.Jwt || '';
-		this.CodigoEmpresa = params?.CodigoEmpresa || 0;
-		this.CodigoUsuario = params?.CodigoUsuario || 0;
-		this.Empresa = params?.Empresa || '';
+		this.jwt = params?.jwt || '';
+		this.CodigoUsuario = params?.CodigoUsuario;
 		this.Login = params?.Login || '';
 	}
 
@@ -22,6 +18,6 @@ export class Sessao {
 	}
 
 	hasJwt(): boolean {
-		return this.Jwt ? true : false;
+		return this.jwt ? true : false;
 	}
 }

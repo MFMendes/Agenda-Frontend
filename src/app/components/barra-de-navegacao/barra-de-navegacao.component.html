@@ -1,0 +1,89 @@
+<div class="asideBar d-flex align-items-center">
+    <div class="nav">
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <div class="title d-flex flex-column">
+          <small>Calendário</small>
+          <b>CEC</b>
+        </div>
+
+        <ul class="ul">
+          <li>
+            <a
+              [routerLink]="['']"
+              routerLinkActive="active"
+              class="asideBar-link d-flex align-items-center p-1"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              <i class="bx bx-home-alt m-1"></i>
+              Início
+            </a>
+          </li>
+          <li>
+            <a
+              [routerLink]="['calendario']"
+              routerLinkActive="active"
+              class="asideBar-link d-flex align-items-center p-1"
+            >
+              <i class="bx bx-calendar-alt m-1"></i>
+              Calendário
+            </a>
+          </li>
+          <li>
+            <a
+              [routerLink]="['telaVisualizacao']"
+              routerLinkActive="active"
+              class="asideBar-link d-flex align-items-center p-1"
+            >
+              <i class="bx bx-detail m-1"></i>
+              Visualização
+            </a>
+          </li>
+
+          <li>
+            <a
+              [routerLink]="['instrutores']"
+              routerLinkActive="active"
+              class="asideBar-link d-flex align-items-center p-1"
+            >
+              <i class="bx bx-user m-1"></i>
+              Instrutores
+            </a>
+          </li>
+
+          <li>
+            <a
+              [routerLink]="['locais']"
+              routerLinkActive="active"
+              class="asideBar-link d-flex align-items-center p-1"
+            >
+              <i class="bx bx-map m-1"></i>
+              Locais
+            </a>
+          </li>
+
+          <li>
+            <a
+              [routerLink]="['disciplinas']"
+              routerLinkActive="active"
+              class="asideBar-link d-flex align-items-center p-1"
+            >
+              <i class="bx bx-book-alt m-1"></i>
+              Disciplinas
+            </a>
+          </li>
+
+          <li>
+            <a
+              [routerLink]="['turmas']"
+              routerLinkActive="active"
+              class="asideBar-link d-flex align-items-center p-1"
+            >
+              <i class="bx bx-group m-1"></i>
+              Turmas
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+</div>
