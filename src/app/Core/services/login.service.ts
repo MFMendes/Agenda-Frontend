@@ -3,9 +3,9 @@ import { Injectable } from "@angular/core";
 import { Observable, tap } from "rxjs";
 import { environment } from "src/environments/environment";
 import { LoginRequest } from "../models/login.request";
-import { Sessao } from "../models/sessao";
+import { Sessao } from "../../lib/core/models/sessao";
 import { UsuarioResponse } from "../models/usuario.response";
-import { SessaoService } from "./sessao.service";
+import { SessaoService } from "../../lib/core/services/sessao.service";
 
 @Injectable({
     providedIn: "root"

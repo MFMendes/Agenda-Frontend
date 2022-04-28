@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { LoginService } from "src/app/core/services/login.service";
 import { LoginRequest } from "src/app/core/models/login.request";
-import { Sessao } from "src/app/core/models/sessao";
+import { Sessao } from "src/app/lib/core/models/sessao";
 import { ToastrService } from "ngx-toastr";
 
 @Component({
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
         this.loginService.autenticar(request).subscribe(
             (response: Sessao) => {
                 if (response.jwt) {
-                    this.router.navigateByUrl("/pagina-inicial");
+                    this.router.navigateByUrl("/inicio");
                 }
             },
             (err) => {

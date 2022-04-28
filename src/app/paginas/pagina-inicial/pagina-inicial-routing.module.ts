@@ -4,11 +4,11 @@ import { PaginaInicialListagemComponent } from "./paginas/pagina-inicial-listage
 
 const routes: Routes = [
     {
-        path: "pagina-inicial",
-        redirectTo: 'pagina-inicial'
+        path: "",
+        redirectTo: 'listagem'
     },
     {
-        path: 'pagina-inicial',
+        path: 'listagem',
         component: PaginaInicialListagemComponent
     }
 ];

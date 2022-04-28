@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BarraDeNavegacaoModule } from 'src/app/components/barra-de-navegacao/barra-de-navegacao.module';
 import { CoreModule } from './core/core.module';
-import { PaginaInicialModule } from './paginas/pagina-inicial/pagina-inicial.module';
+import { PaginasModule } from './paginas/paginas.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { PaginaInicialModule } from './paginas/pagina-inicial/pagina-inicial.mod
     BrowserModule,
     CoreModule,
     BarraDeNavegacaoModule,
-    PaginaInicialModule,
+    PaginasModule,
     RouterModule
   ],
   providers: [],
