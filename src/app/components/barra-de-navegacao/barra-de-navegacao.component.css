@@ -71,3 +71,16 @@ a {
     margin-bottom: 5px;
     color: #ffffff;
 }
+
+.bi {
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.bi:hover {
+    background: #FFF;
+    color: #000;
+}

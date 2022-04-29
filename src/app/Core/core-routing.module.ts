@@ -1,8 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AutenticacaoGuard } from "../lib/core/guards/autenticacao.guard";
-import { MainComponent } from "../lib/layout/components/main/main.component";
-import { PaginaInicialListagemComponent } from "../paginas/pagina-inicial/paginas/pagina-inicial-listagem/pagina-inicial-listagem.component";
 import { LoginComponent } from "./paginas/login/login.component";
 
 const rotas: Routes = [
@@ -14,6 +12,11 @@ const rotas: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+    {
+        path: 'paginas',
+        canActivate: [AutenticacaoGuard],
+        loadChildren: () => import('src/app/paginas/paginas.module').then(m => m.PaginasModule)
     }
 ];
 
