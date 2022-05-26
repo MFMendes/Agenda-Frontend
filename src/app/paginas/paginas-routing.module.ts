@@ -10,7 +10,7 @@ const routes: Routes = [
     },
     {
         path: 'instrutores',
-        canActivate: [AutenticacaoGuard],
+        // canActivate: [AutenticacaoGuard],
         loadChildren: () => import('./pagina-instrutores/pagina-instrutores.module').then(m => m.PaginaInstrutoresModule)
     }
 ];

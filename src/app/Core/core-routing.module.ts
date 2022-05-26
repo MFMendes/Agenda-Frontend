@@ -15,7 +15,7 @@ const rotas: Routes = [
     },
     {
         path: 'paginas',
-        canActivate: [AutenticacaoGuard],
+        // canActivate: [AutenticacaoGuard],
         loadChildren: () => import('src/app/paginas/paginas.module').then(m => m.PaginasModule)
     }
 ];

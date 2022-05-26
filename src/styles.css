@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Core grid CSS, always needed */
+@import 'ag-grid-community/dist/styles/ag-grid.css'; 
+/* Optional theme CSS */
+@import 'ag-grid-community/dist/styles/ag-theme-alpine.css'; 
 
 /* Modal */
 .modal-dialog.modal-drawer {
