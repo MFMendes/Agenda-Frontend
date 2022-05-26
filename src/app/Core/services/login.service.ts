@@ -2,10 +2,10 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable, tap } from "rxjs";
 import { environment } from "src/environments/environment";
-import { LoginRequest } from "../models/login.request";
 import { Sessao } from "../../lib/core/models/sessao";
-import { UsuarioResponse } from "../models/usuario.response";
 import { SessaoService } from "../../lib/core/services/sessao.service";
+import { LoginRequest } from "../models/login.request";
+import { UsuarioResponse } from "../models/usuario.response";
 
 @Injectable({
     providedIn: "root"
@@ -22,7 +22,7 @@ export class LoginService {
 
     autenticar(dados: LoginRequest): Observable<Sessao> {
         return this.http
-            .post<Sessao>(this.urlBase + "/api/autenticar", dados)
+            .post<Sessao>(this.urlBase + "/usuariosAcesso/autenticar", dados)
             .pipe(
                 tap((response: Sessao) => {
                     if (response.jwt) {

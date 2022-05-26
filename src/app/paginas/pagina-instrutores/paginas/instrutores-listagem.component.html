@@ -1,0 +1,23 @@
+<app-barra-de-navegacao-component></app-barra-de-navegacao-component>
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between">
+        <h4 class="titulo-pagina">Pagina Instrutores</h4>
+        <button class="btn-nova-reserva" (click)="abrirModal(template)">Novo instrutor</button>
+    </div>
+
+    <div class="container-body">
+        <form class="form" action="">
+            <div class="input-group mt-3">
+                <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<ng-template #template>
+    <app-modal-cadastrar-instrutor></app-modal-cadastrar-instrutor>
+</ng-template>

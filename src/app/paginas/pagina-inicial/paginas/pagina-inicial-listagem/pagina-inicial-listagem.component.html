@@ -1,1 +1,41 @@
 <app-barra-de-navegacao-component></app-barra-de-navegacao-component>
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between">
+        <h4 class="titulo-pagina">Pagina Inicial</h4>
+        <button class="btn-nova-reserva" (click)="abrirModal(template)">Nova reserva</button>
+    </div>
+
+    <div class="container-body">
+        <form class="form" action="">
+            <div class="input-group mt-3">
+                <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class="reservas">
+            <h3>Reservas feitas</h3>
+            
+            <div class="reservas-realizadas">
+                <accordion [closeOthers]="oneAtATime">
+                    <accordion-group heading="Reserva 1" class="mb-2">
+                      This content is straight in the template.
+                    </accordion-group>
+                    <accordion-group heading="Reserva 2" class="mb-2">
+                      <p>Content 1</p>
+                    </accordion-group>
+                    <accordion-group heading="Reserva 3" class="mb-2">
+                      <p>Content 2</p>
+                    </accordion-group>
+                </accordion>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #template>
+    <app-modal-cadastrar></app-modal-cadastrar>
+</ng-template>

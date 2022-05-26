@@ -3,11 +3,11 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 declare const $: any;
 
 @Component({
-    selector: 'app-pagina-inicial-listagem',
-    templateUrl: './pagina-inicial-listagem.component.html',
-    styleUrls: ['./pagina-inicial-listagem.component.css']
+    selector: 'app-instrutores-listagem',
+    templateUrl: './instrutores-listagem.component.html',
+    styleUrls: ['./instrutores-listagem.component.css']
 })
-export class PaginaInicialListagemComponent implements OnInit {
+export class InstrutoresListagemComponent implements OnInit {
     
     modalRef?: BsModalRef;
     oneAtATime = true;

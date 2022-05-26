@@ -1,10 +1,10 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
-import { LoginService } from "src/app/core/services/login.service";
-import { LoginRequest } from "src/app/core/models/login.request";
 import { Sessao } from "src/app/lib/core/models/sessao";
 import { ToastrService } from "ngx-toastr";
+import { LoginService } from "../../services/login.service";
+import { LoginRequest } from "../../models/login.request";
 
 @Component({
     selector: "app-login",

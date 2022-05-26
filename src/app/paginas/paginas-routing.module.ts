@@ -7,6 +7,11 @@ const routes: Routes = [
         path: 'inicio',
         canActivate: [AutenticacaoGuard],
         loadChildren: () => import('./pagina-inicial/pagina-inicial.module').then(m => m.PaginaInicialModule)
+    },
+    {
+        path: 'instrutores',
+        canActivate: [AutenticacaoGuard],
+        loadChildren: () => import('./pagina-instrutores/pagina-instrutores.module').then(m => m.PaginaInstrutoresModule)
     }
 ];
 
